@@ -44,7 +44,9 @@ Selected=
 
 [Files]
 /SRegN.vhd=-1
+/RegFile.vhd=-1
 
 [Files.Data]
 .\src\SRegN.vhd=VHDL Source Code
+.\src\RegFile.vhd=VHDL Source Code
 
