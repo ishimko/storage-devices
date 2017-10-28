@@ -1,0 +1,12 @@
+[Version]
+Version=9.1
+[Designs]
+storage_devices=.\storage_devices\storage_devices.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+storage_devices=1
