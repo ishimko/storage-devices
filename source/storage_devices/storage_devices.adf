@@ -38,18 +38,27 @@ Active_lib=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=sregn|beh|0
+HierarchyInformation=ram_tb|testbench_for_ram|1 sregn|beh|0 
 ShowHide=ShowTopLevel
 Selected=
 
-[Files.Data]
-.\src\task 1\SRegN.vhd=VHDL Source Code
-.\src\task 1\RegFile.vhd=VHDL Source Code
-
 [Groups]
 task 1=1
+task 2=1
+test-bench=1
+test-bench\task 2=1
 
 [Files]
 task 1/SRegN.vhd=-1
 task 1/RegFile.vhd=-1
+task 2/RAM.vhd=-1
+test-bench\task 2/ram_TB.vhd=-1
+test-bench\task 2/ram_TB_runtest.do=-1
+
+[Files.Data]
+.\src\task 1\SRegN.vhd=VHDL Source Code
+.\src\task 1\RegFile.vhd=VHDL Source Code
+.\src\task 2\RAM.vhd=VHDL Source Code
+.\src\test-bench\task 2\ram_TB.vhd=VHDL Test Bench
+.\src\test-bench\task 2\ram_TB_runtest.do=Macro
 
