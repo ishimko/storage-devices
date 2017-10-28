@@ -20,7 +20,7 @@ architecture beh of SRegN is
 	signal reg : std_logic_vector(n-1 downto 0);
 	constant NO_OUTPUT : std_logic_vector(n-1 downto 0) := (others => 'Z');
 begin
-	main : process(Din, EN, INIT, CLK)
+	write : process(Din, EN, INIT, CLK, OE)
 	begin
 		if INIT = '1' then
 			reg <= (others => '0');
@@ -31,5 +31,15 @@ begin
 		end if;
 	end process;
 	
-	Dout <= reg when OE='0' else NO_OUTPUT;
+	read : process(Din, EN, INIT, CLK, OE)
+	begin
+		if rising_edge(CLK) then
+			if OE='1' then
+				Dout <= reg;
+			else
+				Dout <= NO_OUTPUT;
+			end if;
+		end if;
+	end process;
+	
 end beh;	
