@@ -38,15 +38,18 @@ Active_lib=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=
+HierarchyInformation=sregn|beh|0
 ShowHide=ShowTopLevel
 Selected=
 
-[Files]
-/SRegN.vhd=-1
-/RegFile.vhd=-1
-
 [Files.Data]
-.\src\SRegN.vhd=VHDL Source Code
-.\src\RegFile.vhd=VHDL Source Code
+.\src\task 1\SRegN.vhd=VHDL Source Code
+.\src\task 1\RegFile.vhd=VHDL Source Code
+
+[Groups]
+task 1=1
+
+[Files]
+task 1/SRegN.vhd=-1
+task 1/RegFile.vhd=-1
 
