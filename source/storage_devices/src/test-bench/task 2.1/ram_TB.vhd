@@ -26,7 +26,6 @@ architecture TB_ARCHITECTURE of ram_tb is
 	signal write_enable : STD_LOGIC;
 	signal address_bus : STD_LOGIC_VECTOR(address_size-1 downto 0);
 	signal data_bus : STD_LOGIC_VECTOR(word_size-1 downto 0);
-	signal expected : std_logic_vector(word_size-1 downto 0);
 	
 	constant clock_period: time := 10 ns;
 	constant tests_count: integer := 4;
@@ -51,16 +50,15 @@ begin
 	stimulate: process
 	begin
 		for i in 0 to tests_count-1	loop
-			wait for clock_period;
 			address_bus <= test_addresses(i);
 			data_bus <= test_words(i);
-			expected <= (others => 'U');
-			write_enable <= '1';	  
+			write_enable <= '1';
 			wait for clock_period;
-			
-			write_enable <= '0';
-			expected <= test_words(i);
-			
+		end loop; 
+		write_enable <= '0';		  
+		data_bus <= (others => 'Z');
+		for i in 0 to tests_count-1	loop	 
+			address_bus <= test_addresses(i);
 			wait for clock_period;
 		end loop;
 		assert (false) report "End of simulation" severity failure;
