@@ -1,7 +1,7 @@
 SetActiveLib -work
 comp -include "$dsn\src\task 2.1\RAM.vhd" 
 comp -include "$dsn\src\test-bench\task 2.1\ram_TB.vhd" 
-asim +access +r TESTBENCH_FOR_ram 
+asim +access +r ram_tb 
 wave 
 wave -noreg CLK
 wave -noreg write_enable

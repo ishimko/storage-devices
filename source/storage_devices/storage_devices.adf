@@ -38,7 +38,7 @@ Active_lib=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=fifo_tb|TB_ARCHITECTURE|0 ram_tb|testbench_for_ram|1 regfile_tb|testbench_for_regfile|1 
+HierarchyInformation=ram_tb|TB_ARCHITECTURE|0 regfile|beh|0 regfile_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -74,3 +74,4 @@ task 2.2/FIFO.vhd=-1
 .\src\test-bench\task 2.2\fifo_TB.vhd=VHDL Test Bench
 .\src\test-bench\task 2.2\fifo_TB_runtest.do=Macro
 .\src\task 2.2\FIFO.vhd=VHDL Source Code
+

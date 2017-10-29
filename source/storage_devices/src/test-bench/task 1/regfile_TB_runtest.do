@@ -1,7 +1,7 @@
 SetActiveLib -work
 comp -include "$dsn\src\task 1\RegFile.vhd" 
 comp -include "$dsn\src\test-bench\task 1\regfile_TB.vhd" 
-asim +access +r TESTBENCH_FOR_regfile 
+asim +access +r regfile_tb 
 wave 
 wave -noreg init
 wave -noreg write_port
