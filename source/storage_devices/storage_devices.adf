@@ -38,30 +38,9 @@ Active_lib=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=ram_tb|TB_ARCHITECTURE|0 regfile|beh|0 regfile_tb|TB_ARCHITECTURE|0 
+HierarchyInformation=ram_tb|TB_ARCHITECTURE|0 regfile|beh|0 regfile_tb|TB_ARCHITECTURE|0
 ShowHide=ShowTopLevel
 Selected=
-
-[Groups]
-task 1=1
-task 2.1=1
-test-bench=1
-test-bench\task 2.1=1
-test-bench\task 1=1
-test-bench\task 2.2=1
-task 2.2=1
-
-[Files]
-task 1/SRegN.vhd=-1
-task 1/RegFile.vhd=-1
-task 2.1/RAM.vhd=-1
-test-bench\task 2.1/ram_TB.vhd=-1
-test-bench\task 2.1/ram_TB_runtest.do=-1
-test-bench\task 1/regfile_TB.vhd=-1
-test-bench\task 1/regfile_TB_runtest.do=-1
-test-bench\task 2.2/fifo_TB.vhd=-1
-test-bench\task 2.2/fifo_TB_runtest.do=-1
-task 2.2/FIFO.vhd=-1
 
 [Files.Data]
 .\src\task 1\SRegN.vhd=VHDL Source Code
@@ -74,4 +53,33 @@ task 2.2/FIFO.vhd=-1
 .\src\test-bench\task 2.2\fifo_TB.vhd=VHDL Test Bench
 .\src\test-bench\task 2.2\fifo_TB_runtest.do=Macro
 .\src\task 2.2\FIFO.vhd=VHDL Source Code
+.\src\task 3\RAM_Hamming.vhd=VHDL Source Code
+.\src\test-bench\task 3\ram_hamming_TB.vhd=VHDL Test Bench
+.\src\test-bench\task 3\ram_hamming_TB_runtest.do=Macro
+
+[Groups]
+task 1=1
+task 2.1=1
+test-bench=1
+test-bench\task 2.1=1
+test-bench\task 1=1
+test-bench\task 2.2=1
+test-bench\task 3=1
+task 2.2=1
+task 3=1
+
+[Files]
+task 1/SRegN.vhd=-1
+task 1/RegFile.vhd=-1
+task 2.1/RAM.vhd=-1
+test-bench\task 2.1/ram_TB.vhd=-1
+test-bench\task 2.1/ram_TB_runtest.do=-1
+test-bench\task 1/regfile_TB.vhd=-1
+test-bench\task 1/regfile_TB_runtest.do=-1
+test-bench\task 2.2/fifo_TB.vhd=-1
+test-bench\task 2.2/fifo_TB_runtest.do=-1
+test-bench\task 3/ram_hamming_TB.vhd=-1
+test-bench\task 3/ram_hamming_TB_runtest.do=-1
+task 2.2/FIFO.vhd=-1
+task 3/RAM_Hamming.vhd=-1
 
